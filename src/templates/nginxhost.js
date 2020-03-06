@@ -32,9 +32,8 @@ const content = `
           location ~ \.php$ {
                   include fastcgi.conf;
                   fastcgi_intercept_errors on;
-                  fastcgi_pass php;
-         include fastcgi_params;
-      fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+                  include fastcgi_params;
+                  fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
           }
   
           location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)$ {
