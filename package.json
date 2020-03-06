@@ -1,0 +1,16 @@
+{
+  "name": "generate-shop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chalk": "^3.0.0",
+    "commander": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.0.6",
+    "mysql": "^2.18.1",
+    "mysql2-promise": "^0.1.4",
+    "shelljs": "^0.8.3"
+  }
+}
