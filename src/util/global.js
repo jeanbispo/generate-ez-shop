@@ -10,6 +10,7 @@ class General {
     this.hostDB = dotenv.DB_HOST;
     this.userDB = dotenv.DB_USER;
     this.passwordDB = dotenv.DB_PASSWORD;
+    this.originDBName = dotenv.DB_ORIGIN_NAME;
   }
 
   isEmpty(obj) {

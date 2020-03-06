@@ -124,7 +124,7 @@ class GenerateShop extends Ez {
     await mysql.query(`create database ${dataBaseName}`)
 
 
-    let comand = await shell.exec(`mysqldump -h ${this.hostDB} --user=${this.userDB} --password=${this.passwordDB} ezcommerce|mysql -h ${this.hostDB} --user=${this.userDB} --password=${this.passwordDB} ${dataBaseName}`)
+    let comand = await shell.exec(`mysqldump -h ${this.hostDB} --user=${this.userDB} --password=${this.passwordDB} ${this.originDBName}|mysql -h ${this.hostDB} --user=${this.userDB} --password=${this.passwordDB} ${dataBaseName}`)
     if (comand.code !== 0) throw comand.stderr;
 
 
