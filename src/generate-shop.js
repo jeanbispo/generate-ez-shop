@@ -168,7 +168,7 @@ class GenerateShop extends Ez {
     console.log('********* 7 ***********');
     const endfile = templates.nginxhost(url, folder);
     try {
-      fs.writeFileSync(hostfolder, endfile);
+     fs.writeFileSync(hostfolder, endfile);
       return true;
     } catch (error) {
       throw error;
@@ -251,7 +251,7 @@ class GenerateShop extends Ez {
       await this.addHostNameToHosts(urlProject)
         .finally(countNumberProcess++);
 
-      await this.createVirtualHost(urlProject, `${storesFolder}/${folderName}`, `${urlProject}/${folderName}`)
+      await this.createVirtualHost(urlProject, `${storesFolder}/${folderName}`, `${dotenv.VHOST_FOLDER}/${urlProject}`)
         .finally(countNumberProcess++);
 
       return {
