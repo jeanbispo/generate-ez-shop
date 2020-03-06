@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "new": "nodejs index.js new"
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "chalk": "^3.0.0",
